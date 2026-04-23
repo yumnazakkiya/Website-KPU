@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+/*SIDEBAR*/
+.sidebar {
+  width: 260px;
+  background: linear-gradient(to bottom, #8b0000, #3b0000);
+  color: #fff;
+  padding: 20px 15px;
+  min-height: 100vh;
+}
+/* SIDEBAR TERTUTUP  */
+.sidebar.tertutup {
+  width: 60px;
+  padding: 20px 5px;
+}
+
+/* SEMBUNYIKAN SEMUA ISI SIDEBAR */
+.sidebar.tertutup .logo span,
+.sidebar.tertutup .item-menu,
+.sidebar.tertutup .submenu,
+.sidebar.tertutup .item-submenu,
+.sidebar.tertutup .garis-menu {
+  display: none !important;
+}
+
+/* TOMBOL < HARUS TETAP MUNCUL */
+.sidebar.tertutup .tombol-menu {
+  display: block;
+  margin: 0 auto;
+}
+
+/*LOGO*/
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tombol-menu {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/*GARIS*/
+.garis-menu {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin: 12px 0;
+}
+
+/*MENU*/
+.item-menu {
+  padding: 8px 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+/*  */
+
+.item-menu.aktif {
+  text-decoration: underline;
+}
+
+/*PANAH*/
+.panah-menu {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*SUBMENU*/
+.submenu {
+  text-align: center;
+  margin-top: 5px;
+  /* new */
+  display: none;
+  /* end new */
+}
+/*  */
+
+.submenu.aktif {
+  display: block;
+}
+
+/*  */
+
+.item-submenu {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  color: rgba(255, 200, 200, 0.85);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item-submenu.aktif {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*KONTEN*/
+.konten {
+  flex: 1;
+  padding: 20px 40px 30px;
+  /* new */
+  position: relative;
+  /* end new */
+}
+/*  */
+
+.konten h2 {
+  margin: 0 0 25px;
+  font-size: 26px;
+}
+
+/*FORM WRAPPER*/
+.pembungkus-form {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/*FOTO*/
+.kotak-foto {
+  width: 180px;
+  text-align: center;
+}
+
+.pratinjau-foto {
+  width: 160px;
+  height: 200px;
+  background: #d9d9d9;
+  margin-bottom: 10px;
+  border: 2px solid #999;
+}
+
+.tombol-unggah {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*FORM*/
+.form {
+  flex: 1;
+  max-width: 900px;
+}
+
+.baris-form {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: center;
+  margin-bottom: 14px;
+  column-gap: 20px;
+}
+
+.baris-form label {
+  font-size: 14px;
+}
+
+.baris-form input {
+  height: 30px;
+  border: 1px solid #888;
+  padding: 4px 8px;
+  width: 100%;
+}
+
+/* new */
+.form-vertikal .baris-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.form-vertikal .baris-form label {
+  margin-bottom: 6px;
+}
+
+.form-vertikal .baris-form input {
+  height: 36px;
+}
+/* end new */
+
+.tabel-master {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tabel-master th,
+.tabel-master td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tabel-master th {
+  background: #f0f0f0;
+}
+
+.tabel-master tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* HEADER DATA MASTER */
+.header-master {
+  background: #8b0000;
+  color: white;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.judul-master {
+  font-weight: 700; /* lebih tebal */
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* KOLOM */
+.kolom-aksi {
+  text-align: center;
+}
+
+/* AKSI FORM */
+.aksi-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* DATA MASTER */
+/* AKSI CRUD */
+.tombol-ubah {
+  background: #f1c40f;
+  color: #000;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tombol-hapus {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tombol-tambah {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MODAL CRUD*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  width: 400px;
+  padding: 20px;
+  margin: 10% auto;
+  border-radius: 8px;
+}
+
+/* FOOTER DATA MASTER */
+/* PAGINATION */
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Semua tombol pagination */
+#pagination a,
+#pagination button {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d7e2;
+  background: #ffffff;
+  color: #2c3e50;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+#pagination a:hover {
+  background: #e9f2ff;
+  border-color: #4b8df7;
+  color: #1f5fbf;
+}
+
+/* Active page */
+#pagination .active {
+  background: #4b8df7;
+  color: #fff;
+  border-color: #4b8df7;
+  font-weight: bold;
+}
+
+/* Disabled */
+#pagination button:disabled {
+  background: #f0f2f5;
+  color: #999;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* TOAST NOTIFICATION (bulk-delete) */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e74c3c; /* merah default */
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background: #27ae60;
+}
+
+.toast.warning {
+  background: #f39c12;
+}
+
+/* ===============================
+   FORCE MODAL EDIT VERTICAL
+================================= */
+
+#modalEdit form {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#modalEdit .form-group-vertikal {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 14px !important;
+}
+
+#modalEdit .form-group-vertikal label {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 6px !important;
+  font-weight: 600;
+}
+
+#modalEdit .form-group-vertikal input {
+  display: block !important;
+  width: 100% !important;
+  height: 40px;
+  padding: 8px 12px;
+}
+
+#modalEdit .modal-actions {
+  display: flex;
+  justify-content: flex-end; /* pastikan ke kanan */
+  align-items: center;
+  gap: 8px; /* jarak tombol lebih rapat */
+  margin-top: 6px; /* lebih dekat ke input */
+}
+
+#modalEdit .modal-actions button {
+  padding: 8px 16px; /* lebih compact */
+}

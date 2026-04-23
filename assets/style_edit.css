@@ -1,0 +1,220 @@
+.sidebar-edit {
+    width: 260px;
+    background: linear-gradient(to bottom, #8b0000, #3b0000);
+    color: #fff;
+    padding: 20px 15px;
+    min-height: 100vh;
+}
+
+.form-edit-identitas {
+    max-width: 1000px;
+    margin-top: 30px;
+    flex: 1;
+}
+.form-edit {
+    max-width: 1000px;
+    margin-top: 30px;
+}
+.baris-edit{
+    display:grid;
+    grid-template-columns: 260px 1fr;
+    align-items:center;
+    gap:15px;
+    margin-bottom:16px;
+}
+
+.baris-edit label{
+    font-weight:500;
+}
+.baris-edit input,
+.baris-edit select,
+.baris-edit textarea{
+    width:100%;
+    padding:8px 10px;
+    border:1px solid #999;
+}
+
+.baris-edit textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.aksi-edit {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; 
+}
+
+/* Paksa menu jadi biru */
+.sidebar-edit .item-menu {
+    display: block;
+    padding: 8px 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+
+    color: #fff !important;   
+    text-decoration: none;
+}
+
+.bagian-identitas {
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 60px;
+    margin-top: 20px; 
+}
+
+/* Kotak foto */
+.kotak-foto {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.pratinjau-foto {
+    width: 150px;
+    height: 200px;   
+    background: #ccc;
+    border: 2px solid #999;
+}
+
+/* Hilangkan efek visited */
+.sidebar-edit .item-menu:visited {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Aktif pakai underline */
+.sidebar-edit .item-menu.aktif {
+    text-decoration: underline;
+}
+.input-gabung{
+    display:flex;
+    gap:10px;
+}
+
+.input-gabung input[type="text"]{
+    flex:2;
+}
+
+.input-gabung input[type="date"]{
+    flex:1;
+}
+.btn-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.tabel-riwayat tr{
+    cursor:pointer;
+    }
+    
+.tabel-riwayat tr:hover{
+    background:#f1f1f1;
+}
+
+.tabel-riwayat{
+    width:750px;
+    margin-top:30px;
+}
+.konten-akun{
+    flex:1;
+    position: relative;  
+    padding: 20px 40px 30px 40px; /* kiri kanan sama */
+    box-sizing: border-box;
+}
+.konten-akun h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.konten-akun .aksi-form {
+    display: flex;
+    justify-content: flex-end;
+}
+.konten-akun .kelompok-form {
+    width: 100%;
+}
+
+.konten-akun .kelompok-form input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.konten-akun .tab-container {
+    width: 100%;
+}
+.kelompok-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.kelompok-form label {
+    margin-bottom: 6px;
+}
+
+.kelompok-form input {
+    height: 36px;
+    border: 1px solid #888;
+    padding: 6px 10px;
+    width: 90% !important;
+}
+.input-password {
+    position: relative;
+}
+
+.input-password input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input-password span {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+.tab-container {
+    display: flex;
+    border-bottom: 2px solid #999;
+    margin-bottom: 40px;
+}
+
+.tab {
+    flex: 1; 
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+
+.tab.aktif {
+    font-weight: bold;
+}
+
+.tab.aktif::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #8b0000;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.aktif {
+    display: block;
+}

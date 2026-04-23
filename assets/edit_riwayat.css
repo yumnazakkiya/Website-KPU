@@ -1,0 +1,55 @@
+/* ================= SIDEBAR EDIT ================= */
+.sidebar-edit {
+    width: 179px;
+    background: linear-gradient(to bottom, #8b0000, #3b0000);
+    color: #fff;
+    padding: 20px 15px;
+    min-height: 100vh;
+}
+
+/* ================= FORM ================= */
+.form-edit {
+    max-width: 800px; /* diseragamkan */
+    margin-top: 0px !important;
+    flex: 1;
+}
+
+/* ================= MENU SIDEBAR ================= */
+.sidebar-edit .item-menu {
+    display: block;
+    padding: 8px 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-edit .item-menu:visited {
+    text-decoration: none;
+}
+
+.sidebar-edit .item-menu.aktif {
+    text-decoration: underline;
+}
+
+/* ================= LAYOUT ================= */
+.bagian-identitas {
+    display: flex;
+    justify-content: center; /* dipilih versi final */
+    margin-top: 40px; /* kompromi dari 20 & 60 */
+}
+
+/* ================= TABEL ================= */
+.tabel-riwayat {
+    width: 750px; /* diseragamkan */
+    margin-top: 30px;
+}
+
+.tabel-riwayat tr {
+    cursor: pointer;
+}
+
+.tabel-riwayat tr:hover {
+    background: #f1f1f1;
+}

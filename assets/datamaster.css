@@ -1,0 +1,64 @@
+ /* =============================
+   DATA MASTER TABLE STYLE
+============================= */
+
+.table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.show-entries select,
+.search-box input {
+    height: 28px;
+    padding: 4px 8px;
+}
+
+.table-header {
+    background: #8b0000;
+    color: white;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-master {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-master th,
+.table-master td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tombol-previous {
+    background: #4b8df7;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tombol-next {
+    background: #4b8df7;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
