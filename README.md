@@ -78,7 +78,7 @@ This project is a full-stack web-based Employee Profile Management System develo
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/yumnazakkiya/Website-KPU.git
 ```
 
 1. Move project to `htdocs`
@@ -86,7 +86,7 @@ git clone https://github.com/your-username/your-repo.git
 3. Run via browser:
 
 ```
-http://localhost/your-project-folder
+http://localhost/Website-KPU
 ```
 
 ---
@@ -123,7 +123,7 @@ http://localhost/your-project-folder
 
 ## 👩‍💻 Author
 
-**Your Name**
+**Zakkiya Ashhabul Yumna**
 
 ---
 
