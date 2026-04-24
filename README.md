@@ -41,14 +41,16 @@ This project is a full-stack web-based Employee Profile Management System develo
 ### 👥 Employee Management
 
 <p align="center">
-  <img src="<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/850564cc-a719-4769-9ed1-e42df39b7d95" />
-" alt="Employee"/>
+<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/c86bbc40-14cd-4897-bb2b-5503e4cfd758" />
+
 </p>
 
 ### 📄 PDF Export Feature
 
 <p align="center">
   <img src="https://via.placeholder.com/600x300.png?text=PDF+Export" alt="PDF Export"/>
+  ![Uploading image.png…]()
+
 </p>
 
 ---
